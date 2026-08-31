@@ -6,6 +6,14 @@ published reference digits at https://stuff.mit.edu/afs/sipb/contrib/pi/
 (run via the WSL/Linux build -- see MEMORY USE below for why that's the
 recommended path at this scale on Windows).
 
+# Made with Claude
+
+Made using Claude Sonnet 5
+
+# Screenshot
+
+![pi_calculator](pi_calculator.jpg)
+
 WHAT'S IN THIS ZIP
   pi_calculator.cpp   The C++ source it was built from.
   README.txt          This file.
