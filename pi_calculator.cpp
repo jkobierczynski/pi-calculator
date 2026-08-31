@@ -331,10 +331,14 @@ void printMemoryNotice(unsigned long digits, unsigned long precisionBits,
                       "in memory at once, and this multiplies with thread "
                       "count (currently "
                    << numThreads
-                   << "). If you hit a 'Cannot allocate memory' error, "
-                      "re-run with a lower thread count (pass it as the "
-                      "3rd argument) to trade speed for less peak memory "
-                      "use.\n";
+                   << "). If you hit a 'Cannot allocate memory' error on a "
+                      "run with genuinely limited RAM, re-running with a "
+                      "lower thread count (-t N) trades speed for less peak "
+                      "memory use. On Windows, well past a couple hundred "
+                      "million digits, that same error can also come from a "
+                      "known GMP bug that thread count does NOT fix -- see "
+                      "the README's appendix; the WSL/Linux build avoids "
+                      "it.\n";
     }
 }
 
